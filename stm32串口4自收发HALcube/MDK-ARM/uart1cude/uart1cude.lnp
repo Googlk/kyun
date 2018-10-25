@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"uart1cude\startup_stm32f103xe.o"
+"uart1cude\main.o"
+"uart1cude\gpio.o"
+"uart1cude\usart.o"
+"uart1cude\stm32f1xx_it.o"
+"uart1cude\stm32f1xx_hal_msp.o"
+"uart1cude\stm32f1xx_hal_gpio_ex.o"
+"uart1cude\stm32f1xx_hal_tim.o"
+"uart1cude\stm32f1xx_hal_tim_ex.o"
+"uart1cude\stm32f1xx_hal_uart.o"
+"uart1cude\stm32f1xx_hal.o"
+"uart1cude\stm32f1xx_hal_rcc.o"
+"uart1cude\stm32f1xx_hal_rcc_ex.o"
+"uart1cude\stm32f1xx_hal_gpio.o"
+"uart1cude\stm32f1xx_hal_dma.o"
+"uart1cude\stm32f1xx_hal_cortex.o"
+"uart1cude\stm32f1xx_hal_pwr.o"
+"uart1cude\stm32f1xx_hal_flash.o"
+"uart1cude\stm32f1xx_hal_flash_ex.o"
+"uart1cude\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "uart1cude\uart1cude.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uart1cude.map" -o uart1cude\uart1cude.axf
